@@ -1,0 +1,20 @@
+import random
+secret=random.randint(1，50）
+guess=0
+tries=0
+print"AHOY! I'm Richard YU,and I have a secret!"
+print"It is a number from 1 to 50. I'll give you 5 tries."
+while guess !=secret and tries < 5:
+      guess=input ("What's your guess")
+      if guess < secret:
+         print "too smaller, larger please!!!"
+      elif guess > secret:
+           print "too larger, smaller please!!!"
+
+      tries=tries+1
+
+if guess==secret:
+  print "Wonderful! you're win!!!"
+else:
+  print "No more guesses! better luck next time, goodbye!!!"
+  print "The secret number was", secret
